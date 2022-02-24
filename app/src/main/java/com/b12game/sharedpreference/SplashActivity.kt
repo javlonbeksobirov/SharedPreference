@@ -12,7 +12,7 @@ class SplashActivity : AppCompatActivity() {
 
         val handler = Handler()
         handler.postDelayed({
-            if (SharedPref(this).getSaved() == true){
+            if (SharedPref(this).isSaved){
                 Intent(this,MainActivity::class.java).also{
                     startActivity(it)
                     finish()

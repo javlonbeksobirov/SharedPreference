@@ -15,7 +15,7 @@ class IntroActivty : AppCompatActivity() {
     private fun initViews() {
         save_btn = findViewById(R.id.save_btn)
         save_btn.setOnClickListener {
-            SharedPref(this).isSaved(true)
+            SharedPref(this).isSaved = true
         }
     }
 }
