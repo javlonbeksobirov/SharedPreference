@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.core.content.edit
 
 class SharedPref(context: Context) {
+    private val number = 7
     private val pref = context.getSharedPreferences("nimadir",Context.MODE_PRIVATE)
 
     var isSaved: Boolean
